@@ -1,9 +1,37 @@
 <template>
-  <require from="bootstrap/css/bootstrap.min.css"></require>
+  <!--<require from="bootstrap/css/bootstrap.min.css"></require>-->
+  <require from="material-design-lite/material.css"></require>
+
   <require from="./ascene"></require>
 
 
   <h1>${message}</h1>
 
-  <ascene></ascene>
+  <style>
+    a-scene {
+      height: 300px;
+    }
+  </style>
+
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Title</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mdl-layout__content">
+      <ascene></ascene>
+    </main>
+
 </template>

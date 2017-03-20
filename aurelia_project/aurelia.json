@@ -136,16 +136,17 @@
             "env": "dev"
           },
           {
-            "name": "bootstrap",
-            "path": "../node_modules/bootstrap/dist",
-            "main": "js/bootstrap.min",
-            "deps": [
-              "jquery"
-            ],
-            "exports": "$",
+            "name": "material-design-lite",
+            "path": "../node_modules/material-design-lite/dist",
+            "main": "material",
             "resources": [
-              "css/bootstrap.min.css"
+              "material.css"
             ]
+          },
+          {
+            "name": "aurelia-mdl-plugin",
+            "path": "../node_modules/aurelia-mdl-plugin/dist/amd",
+            "main": "index"
           }
         ]
       }
